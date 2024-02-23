@@ -1,0 +1,54 @@
+http- isme clear text me data jata hai
+https- extra layer isme data encrypted form me jata hai
+-url
+-uri
+-urn
+what are http headers?
+metadata-key-value sent along with request & response
+caching, authentication, message,state
+Request headers-from client
+response headers-from server
+representation headers-coding/compression
+Payload HEaders- data
+
+
+Most common Headers-
+Accept:apllication/json
+User-agent--- request kaha se ayi h konsa browser h
+Authotization--Bearer, 
+content-type-img pdf raw data
+cookie
+cache-control
+
+http methods-
+get-retrieve a resource
+head-no message
+options-ehat operation are available
+trace-loopback test
+delete-remove a resource
+put-replace a resource
+post-interact with resource
+patch-change part of resource
+
+
+http status code
+1xx- Infromational
+2xx-Success
+3xx-Redirection
+4xx-client errors
+5xx-server error
+
+
+100-continue
+102-processing
+200-ok
+201-created
+202-accepted
+307-temporary Redirection
+308-permanent redirect
+400-bad request
+401-unauthorised
+402-payment required
+404-not found
+500-internal server error
+504-Gateway time out

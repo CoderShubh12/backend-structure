@@ -1,8 +1,20 @@
 import dotenv from "dotenv/config.js";
 import connectDb from "./db/index.js";
-connectDb();
+import app from "./app.js";
+import router from "./routes/user.routes.js";
 
-// using iife funvtion
+connectDb()
+  .then(() => {
+    app.listen(process.env.PORT || 8000, (req, res) => {
+      // res.send("servver startrd");
+      console.log(`server is runniing at port : ${process.env.PORT}`);
+    });
+  })
+  .catch((error) => {
+    console.log("MONGO DB CONNECTION FAILED !!", error);
+  });
+
+// using iife function
 // import express from express
 // const app=express()
 
